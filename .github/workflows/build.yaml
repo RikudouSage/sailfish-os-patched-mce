@@ -30,7 +30,7 @@ jobs:
       - name: Clone mce
         uses: actions/checkout@v3
         with:
-          repository: https://github.com/sailfishos/mce.git
+          repository: sailfishos/mce
           ref: $MCE_VERSION
           path: mce
           clean: false
