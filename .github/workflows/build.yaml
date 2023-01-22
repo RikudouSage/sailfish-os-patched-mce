@@ -56,6 +56,7 @@ jobs:
           cd build ;
           cp -r /share/* . ;
           mb2 -t SailfishOS-$OS_VERSION-${{ matrix.arch }} build ;
+          cat evdev.inc ;
           sudo cp -r RPMS/*.rpm /share/output"
 
       - name: Upload RPM (${{ matrix.arch }})
