@@ -39,10 +39,8 @@ jobs:
       - name: Copy patch
         run: cp assistantButton.patch mce
 
-      - name: Change working directory
-        run: cd mce
-
       - name: Patch
+        working-directory: mce
         run: patch < assistantButton.patch
 
 #      - name: Prepare
