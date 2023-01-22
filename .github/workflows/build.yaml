@@ -22,7 +22,7 @@ jobs:
     name: Build mce
     strategy:
       matrix:
-        arch: ['aarch64']
+        arch: ['armv7hl', 'aarch64', 'i486']
 
     steps:
       - name: Checkout repo
