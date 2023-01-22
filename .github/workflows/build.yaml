@@ -44,11 +44,8 @@ jobs:
         working-directory: mce
         run: |
           cp rpm/mce.spec .
-          patch < assistantButton.patch
           patch < spec.patch
           sed -i "s/{{{releaseName}}}/$MCE_RELEASE/g" mce.spec
-          cat mce.spec
-          
 
 #      - name: Prepare
 #        run: docker pull coderus/sailfishos-platform-sdk:$OS_VERSION && mkdir output
