@@ -62,7 +62,7 @@ jobs:
           sudo cp -r RPMS/*.rpm /share/output"
 
       - name: Upload RPM (${{ matrix.arch }})
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: rpm-${{ matrix.arch }}
           path: mce/output
