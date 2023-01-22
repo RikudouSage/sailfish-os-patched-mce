@@ -43,8 +43,8 @@ jobs:
       - name: Patch
         working-directory: mce
         run: |
-          cp rpm/mce.spec .
           patch < assistantButton.patch
+          cd rpm
           patch < spec.patch
           sed -i "s/{{{releaseName}}}/$MCE_RELEASE/g" mce.spec
 
@@ -59,7 +59,6 @@ jobs:
           cd build ;
           cp -r /share/* . ;
           mb2 -t SailfishOS-$OS_VERSION-${{ matrix.arch }} build ;
-          cat evdev.inc ;
           sudo cp -r RPMS/*.rpm /share/output"
 
       - name: Upload RPM (${{ matrix.arch }})
