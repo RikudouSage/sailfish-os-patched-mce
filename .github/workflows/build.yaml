@@ -14,6 +14,7 @@ on:
 env:
   OS_VERSION: 4.4.0.68
   MCE_VERSION: 1.109.1
+  MCE_RELEASE: 1.9.2.jolla
 
 jobs:
   build:
@@ -36,12 +37,18 @@ jobs:
           clean: false
           submodules: recursive
 
-      - name: Copy patch
-        run: cp assistantButton.patch mce
+      - name: Copy patches
+        run: cp *.patch mce
 
       - name: Patch
         working-directory: mce
-        run: patch < assistantButton.patch
+        run: |
+          cp rpm/mce.spec .
+          patch < assistantButton.patch
+          patch < spec.patch
+          sed -i "s/{{{releaseName}}}/$MCE_RELEASE/g" mce.spec
+          cat mce.spec
+          
 
 #      - name: Prepare
 #        run: docker pull coderus/sailfishos-platform-sdk:$OS_VERSION && mkdir output
