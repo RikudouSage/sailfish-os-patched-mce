@@ -45,7 +45,7 @@ jobs:
         run: |
           patch < assistantButton.patch
           cd rpm
-          patch < spec.patch
+          patch < ../spec.patch
           sed -i "s/{{{releaseName}}}/$MCE_RELEASE/g" mce.spec
 
       - name: Prepare
