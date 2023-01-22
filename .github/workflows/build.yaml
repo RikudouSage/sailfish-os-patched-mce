@@ -31,7 +31,7 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: sailfishos/mce
-          ref: $MCE_VERSION
+          ref: ${{ vars.MCE_VERSION }}
           path: mce
           clean: false
           submodules: recursive
