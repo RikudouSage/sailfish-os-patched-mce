@@ -28,8 +28,8 @@
  # FIXME: we need a configure script ... for now pass dirs in make install
  make install DESTDIR=%{buildroot} _UNITDIR=%{_unitdir} _LIBDIR=%{_libdir} ENABLE_MANPAGE_INSTALL=n
 +mkdir -p %{buildroot}/usr/share/patchmanager/patches/xperia-10-iii-assistant-button-flashlight
-+cp ../flashlight-patch/unified_diff.patch %{buildroot}/usr/share/patchmanager/patches/xperia-10-iii-assistant-button-flashlight
-+cp ../flashlight-patch/patch.json %{buildroot}/usr/share/patchmanager/patches/xperia-10-iii-assistant-button-flashlight
++cp flashlight-patch/unified_diff.patch %{buildroot}/usr/share/patchmanager/patches/xperia-10-iii-assistant-button-flashlight
++cp flashlight-patch/patch.json %{buildroot}/usr/share/patchmanager/patches/xperia-10-iii-assistant-button-flashlight
  
  %preun
  if [ "$1" -eq 0 ]; then
