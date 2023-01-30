@@ -2,7 +2,7 @@
   "description": "Maps Xperia 10 III assistant button to a flashlight toggle",
   "name": "xperia-10-iii-assistant-button-flashlight",
   "display_name": "Assistant button as a flashlight",
-  "category": "other",
+  "category": "homescreen",
   "author": "Rikudou_Sennin",
   "version": "1.0.0",
   "compatible": [
