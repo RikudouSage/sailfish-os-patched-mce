@@ -1,0 +1,11 @@
+{
+  "description": "Maps Xperia 10 III assistant button to a flashlight toggle",
+  "name": "Assistant button as a flashlight",
+  "display_name": "Assistant button as a flashlight",
+  "category": "other",
+  "author": "Rikudou_Sennin",
+  "version": "1.0.0",
+  "compatible": [
+    "4.4.0.72"
+  ]
+}
