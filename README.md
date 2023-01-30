@@ -1,6 +1,6 @@
 # Patched MCE for Xperia 10 III
 
-**Warning** This is a system component, if you install it incorrectly you may brick your system. This has only been tested on an Xperia 10 III with SFOS version 4.4.0.72.
+### Warning This is a system component, if you install it incorrectly you may brick your system. This has only been tested on an Xperia 10 III with SFOS version 4.4.0.72.
 
 This `mce` is patched to allow the use of the assistant button. The button is mapped to the home key, meaning by default it will take you to your homescreen.
 
