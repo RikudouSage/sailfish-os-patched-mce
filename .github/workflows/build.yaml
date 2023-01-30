@@ -38,7 +38,9 @@ jobs:
           submodules: recursive
 
       - name: Copy patches
-        run: cp *.patch mce
+        run: |
+          cp *.patch mce
+          cp -r flashlight-patch mce
 
       - name: Patch
         working-directory: mce

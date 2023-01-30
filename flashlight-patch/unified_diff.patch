@@ -1,0 +1,25 @@
+--- a/usr/share/lipstick-jolla-home-qt5/compositor.qml	2023-01-30 20:35:00.753326000 +0100
++++ b/usr/share/lipstick-jolla-home-qt5/compositor.qml	2023-01-30 20:34:39.557807500 +0100
+@@ -1737,6 +1737,13 @@
+     }
+ 
+     NemoDBus.DBusInterface {
++        id: flashlightDbusInterface
++        iface: "com.jolla.settings.system.flashlight"
++        service: "com.jolla.settings.system.flashlight"
++        path: "/com/jolla/settings/system/flashlight"
++    }
++
++    NemoDBus.DBusInterface {
+         bus: NemoDBus.DBus.SystemBus
+         service: 'com.nokia.mce'
+         path: '/com/nokia/mce/signal'
+@@ -1758,7 +1765,7 @@
+                 root.showUnlockScreen()
+             } else if (argument === "home-key") {
+                 if (!root.systemGesturesDisabled) {
+-                    root.goToSwitcher(true)
++                    flashlightDbusInterface.call("toggleFlashlight", undefined);
+                 }
+             }
+         }
