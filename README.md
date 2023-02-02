@@ -11,3 +11,4 @@ Download the latest version from [Actions (branch master)](https://github.com/Ri
 ## Supported versions
 
 - [4.4.0.72](https://github.com/RikudouSage/sailfish-os-patched-mce/actions/runs/4048649067)
+- [4.5.0.16](https://github.com/RikudouSage/sailfish-os-patched-mce/actions)
