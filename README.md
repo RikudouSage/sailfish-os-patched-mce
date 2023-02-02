@@ -8,4 +8,7 @@ This package also installs additional patches for patch manager which allow you 
 
 Download the latest version from [Actions (branch master)](https://github.com/RikudouSage/sailfish-os-patched-mce/actions/workflows/build.yaml?query=branch%3Amaster++).
 
-**Latest version supported for 4.4.0.72**: https://github.com/RikudouSage/sailfish-os-patched-mce/actions/runs/4048649067
+## Supported versions
+
+- [4.4.0.72](https://github.com/RikudouSage/sailfish-os-patched-mce/actions/runs/4048649067)
+- [4.5.0.16](https://github.com/RikudouSage/sailfish-os-patched-mce/actions)

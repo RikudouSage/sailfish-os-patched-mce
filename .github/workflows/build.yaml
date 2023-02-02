@@ -13,8 +13,8 @@ on:
 
 env:
   OS_VERSION: 4.4.0.68
-  MCE_VERSION: 1.109.1
-  MCE_RELEASE: 1.10.0.jolla
+  MCE_VERSION: 1.114.1
+  MCE_RELEASE: 1.14.0.jolla
 
 jobs:
   build:
