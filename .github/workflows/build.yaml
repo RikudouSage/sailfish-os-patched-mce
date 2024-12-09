@@ -14,7 +14,7 @@ on:
 env:
   OS_VERSION: 4.5.0.16
   MCE_VERSION: 1.115.4
-  MCE_RELEASE: 1.14.2.jolla
+  MCE_RELEASE: 1.14.3.jolla
 
 jobs:
   build:
