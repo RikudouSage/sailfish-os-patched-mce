@@ -26,10 +26,10 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Clone mce
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: sailfishos/mce
           ref: ${{ env.MCE_VERSION }}
@@ -64,7 +64,7 @@ jobs:
           sudo cp -r RPMS/*.rpm /share/output"
 
       - name: Upload RPM (${{ matrix.arch }})
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: rpm-${{ matrix.arch }}
           path: mce/output
