@@ -8,6 +8,7 @@ This package also installs additional patches for patch manager which allow you 
 
 ## Supported versions
 
+- [5.0.0.61 (latest)](https://github.com/RikudouSage/sailfish-os-patched-mce/releases/latest)
 - [4.6.0.15](https://github.com/RikudouSage/sailfish-os-patched-mce/releases/tag/v4.6.0.15)
 - [4.5.0.16 & 4.5.0.18 & 4.5.0.19 & 4.5.0.21 (latest)](https://github.com/RikudouSage/sailfish-os-patched-mce/releases/v4.5.0.21)
 - [4.4.0.72](https://github.com/RikudouSage/sailfish-os-patched-mce/releases/tag/v4.4.0.72)
